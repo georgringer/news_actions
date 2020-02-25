@@ -1,0 +1,95 @@
+mod.wizards.newContentElement.wizardItems.news {
+  header = News
+  show = *
+  elements {
+    newsList {
+      iconIdentifier = ext-news-wizard-icon
+      title = LLL:EXT:news/Resources/Private/Language/locallang_be.xlf:flexforms_general.mode.news_list
+      description = List + optional detail within same plugin
+      tt_content_defValues {
+        CType = list
+        list_type = news_list
+      }
+    }
+
+    newsListOnly {
+      iconIdentifier = ext-news-wizard-icon
+      title = LLL:EXT:news/Resources/Private/Language/locallang_be.xlf:flexforms_general.mode.news_listOnly
+      description = List + optional detail within same plugin
+      tt_content_defValues {
+        CType = list
+        list_type = news_listOnly
+      }
+    }
+
+    newsDetail {
+      iconIdentifier = ext-news-wizard-icon
+      title = LLL:EXT:news/Resources/Private/Language/locallang_be.xlf:flexforms_general.mode.news_detail
+      description = Show single view of news
+      tt_content_defValues {
+        CType = list
+        list_type = news_detail
+      }
+    }
+
+    newsDateMenu {
+      iconIdentifier = ext-news-wizard-icon
+      title = LLL:EXT:news/Resources/Private/Language/locallang_be.xlf:flexforms_general.mode.news_datemenu
+      description = Menu of dates (month, year)
+      tt_content_defValues {
+        CType = list
+        list_type = news_datemenu
+      }
+    }
+
+    newsSearchForm {
+      iconIdentifier = ext-news-wizard-icon
+      title = LLL:EXT:news/Resources/Private/Language/locallang_be.xlf:flexforms_general.mode.news_searchform
+      description = Search Form
+      tt_content_defValues {
+        CType = list
+        list_type = news_searchform
+      }
+    }
+
+    newsSearchResult {
+      iconIdentifier = ext-news-wizard-icon
+      title = LLL:EXT:news/Resources/Private/Language/locallang_be.xlf:flexforms_general.mode.news_searchresult
+      description = Search Result
+      tt_content_defValues {
+        CType = list
+        list_type = news_searchresult
+      }
+    }
+
+    newsSelectedList {
+      iconIdentifier = ext-news-wizard-icon
+      title = LLL:EXT:news/Resources/Private/Language/locallang_be.xlf:flexforms_general.mode.news_selectedlist
+      description = Liste an bestimmten news
+      tt_content_defValues {
+        CType = list
+        list_type = news_selectedlist
+      }
+    }
+
+    tagList {
+      iconIdentifier = ext-news-wizard-icon
+      title = LLL:EXT:news/Resources/Private/Language/locallang_be.xlf:flexforms_general.mode.tag_list
+      description = Liste von Tags
+      tt_content_defValues {
+        CType = list
+        list_type = news_taglist
+      }
+    }
+
+    categoryList {
+      iconIdentifier = ext-news-wizard-icon
+      title = LLL:EXT:news/Resources/Private/Language/locallang_be.xlf:flexforms_general.mode.category_list
+      description = Liste von Kategorien
+      tt_content_defValues {
+        CType = list
+        list_type = news_categorylist
+      }
+    }
+  }
+}
