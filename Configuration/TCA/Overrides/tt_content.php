@@ -18,7 +18,9 @@ foreach ($actions as $identifier => $item) {
     \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
         'News',
         $identifier,
-        'LLL:EXT:news/Resources/Private/Language/locallang_be.xlf:flexforms_general.mode.' . $item
+        'LLL:EXT:news/Resources/Private/Language/locallang_be.xlf:flexforms_general.mode.' . $item,
+        null,
+        'LLL:EXT:news/Resources/Private/Language/locallang_be.xlf:pi1_title'
     );
 
     $listType = 'news_' . strtolower($identifier);
