@@ -1,6 +1,14 @@
 <?php
 defined('TYPO3_MODE') or die();
 
+// Add the "news" plugin group
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTcaSelectItemGroup(
+    'tt_content',
+    'list_type',
+    'news',
+    'LLL:EXT:news/Resources/Private/Language/locallang_be.xlf:pi1_title'
+);
+
 $actions = [
     'NewsList' => 'news_list',
     'NewsListOnly' => 'news_listOnly',
@@ -12,7 +20,6 @@ $actions = [
     'TagList' => 'tag_list',
     'CategoryList' => 'category_list',
 ];
-
 foreach ($actions as $identifier => $item) {
 
     \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
@@ -20,7 +27,7 @@ foreach ($actions as $identifier => $item) {
         $identifier,
         'LLL:EXT:news/Resources/Private/Language/locallang_be.xlf:flexforms_general.mode.' . $item,
         null,
-        'LLL:EXT:news/Resources/Private/Language/locallang_be.xlf:pi1_title'
+        'news'
     );
 
     $listType = 'news_' . strtolower($identifier);
